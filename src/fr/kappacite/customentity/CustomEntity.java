@@ -10,10 +10,6 @@ public class CustomEntity extends JavaPlugin {
         CustomEntityType.registerEntities();
     }
 
-    public void onEnable(){
-        Bukkit.getPluginManager().registerEvents(new EventListener(), this);
-    }
-
     public void onDisable(){
         CustomEntityType.unregisterEntities();
     }
